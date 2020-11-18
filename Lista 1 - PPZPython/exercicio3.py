@@ -1,0 +1,10 @@
+dias = int(input('Digite o dia de hoje: '))
+horas= int(input('Digite a hora: '))
+minutos = int(input('Digite os minutos: '))
+segundos = int(input('Digite os segundos: '))
+
+dias=(dias*86400)
+horas=(horas*3600)
+minutos=(minutos*60)
+segundos=(dias + horas + minutos + segundos)
+print(segundos)
