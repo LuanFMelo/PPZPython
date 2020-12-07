@@ -5,13 +5,9 @@ a=int(input('Digite o primeiro número: '))
 b=int(input('Digite o segundo número: '))
 c=int(input('Digite o terceiro número: '))
 
-if a > b and a > c:
-    print('O primeiro número é maior deles:', a)
+if a >= b and a >= c:
+    print(f'Maior: {a}')
+elif b >= c:
+    print(f'Maior: {b}')
 else:
-    if b > a and b > c:
-        print('O segundo número é o maior deles: ', b)
-    else:
-        if c > a and c > b:
-            print('O terceiro número é o maior deles:', c)
-        else:
-            print('Todos os números são iguais')
+    print (f'Maior: {c}')

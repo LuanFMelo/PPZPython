@@ -1,21 +1,11 @@
-area_pintada= float(input('Qual o tamanho total em M² da área a ser pintada? '))
+m= int(input('Metros: '))
 
-1Litro - 3Metros
-18Litros - x
+if m % 54 == 0:
+    latas = m / 54
+else:
+    latas = int(m / 54) + 1
 
-1x = 54
-x= 54/1
-x=54Metros
-#############################
-18Litros = 80Reais
-1Litro - x
+valor = latas * 80
 
-18x=80
-x=80/18
-x=
-
-
-
-########################################################
-
-
+print (f'{latas} latas')
+print(f'Total: R$ {valor:.2f}')
