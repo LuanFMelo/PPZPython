@@ -6,7 +6,12 @@ lado1= int(input('Digite o primeiro lado do triangulo: '))
 lado2= int(input('Digite o segundo lado do triangulo: '))
 lado3= int(input('Digite o terceiro lado do triangulo: '))
 
-if lado1 == lado2 == lado3:
+
+if lado1 > lado2 + lado3 or lado2 > lado1 + lado3 or lado3 > lado1 + lado2:
+    print('Não pode ser um triangulo')
+    print('Um dos lados é maior que a soma dos outros dois!') 
+
+elif lado1 == lado2 == lado3:
     print('Esse é um triangulo Equilátero')
 
 elif lado1 == lado2 or lado1 == lado3 or lado2 == lado1 or lado2 == lado3 or lado3 == lado1 or lado3 == lado2:
@@ -14,4 +19,3 @@ elif lado1 == lado2 or lado1 == lado3 or lado2 == lado1 or lado2 == lado3 or lad
     
 else:
     print('Esse é um triangulo Escaleno')
-

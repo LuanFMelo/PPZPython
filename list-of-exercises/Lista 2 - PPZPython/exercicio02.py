@@ -1,6 +1,8 @@
 #Libary IsLeap
-import calendar
 
-ano= int(input('Digite o ano desejado à ser verificado: '))
+a = int (input('Ano: '))
 
-print(calendar.isleap(ano))
+if a % 4 == 0 and (a % 100 != 0 or a % 400 == 0)
+    print('Bissexto')
+else:
+    print('Não é bissexto')
