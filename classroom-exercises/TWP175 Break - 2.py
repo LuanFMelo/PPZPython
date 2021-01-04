@@ -18,10 +18,13 @@ print(f'Soma: {soma}')
 #Mudar codigo para calcular média
 
 soma = 0
+n = 0
 
 while True:
     x = int(input('n (zero sai): '))
     if x == 0:
         break
-    media = (soma + x) / x
-print(f'Média: {media}')
+    else:
+        n = n + 1
+    soma = soma + x
+print(f'Média: {soma/n:.1f}')
